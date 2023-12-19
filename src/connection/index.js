@@ -157,7 +157,7 @@ export const QualitorConnection = async ({ login, senha }) => {
     fs.writeFileSync("./index.html", pageHTML);
 
     await browser.close();
-    console.log("browser closed, powerd by Tanida.");
+    console.log("browser closed, powered by Tanida.");
   };
 
   await register(url);

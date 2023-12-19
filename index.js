@@ -1,7 +1,7 @@
 import { QualitorConnection } from "./src/connection/index.js";
 
 const initalize = async () => {
-  const { handleLogin, liberacaoAcesso } = await QualitorConnection({
+  const { handleLogin, browser, liberacaoAcesso } = await QualitorConnection({
     login: "seu login qualitor",
     senha: "sua senha qualitor",
   });
@@ -13,6 +13,7 @@ const initalize = async () => {
     logged = true;
   } catch (e) {
     console.log("Login ou senha incorreto");
+    await browser.close();
   }
 
   if (logged) {

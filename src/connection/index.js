@@ -86,17 +86,17 @@ export const QualitorConnection = async ({ login, senha }) => {
       console.log(`console popup: ${msg.text()}`);
     });
 
-    const checkboxSelector = "#squad2_5";
+    const checkboxSelector = "#squad2_2";
     await newPage.waitForSelector(checkboxSelector);
     await newPage.evaluate(() => {
-      const checkbox = document.getElementById("squad2_5");
+      const checkbox = document.getElementById("squad2_2");
       if (checkbox) {
         checkbox.click();
 
         console.log("Wallstreet checked");
       }
 
-      const checkboxBanco = document.getElementById("banco1_5");
+      const checkboxBanco = document.getElementById("banco1_4");
       if (checkboxBanco) {
         checkboxBanco.click();
 
@@ -134,7 +134,7 @@ export const QualitorConnection = async ({ login, senha }) => {
     await newPage.type("#motivo", "Acompanhar tmovpay");
 
     await newPage.evaluate(() => {
-      document.getElementById("12").value = "08:00";
+      document.getElementById("12").value = "14:41";
       document.getElementById("24").value = "18:00";
     });
 

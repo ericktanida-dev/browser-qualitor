@@ -134,7 +134,7 @@ export const QualitorConnection = async ({ login, senha }) => {
     await newPage.type("#motivo", "Acompanhar tmovpay");
 
     await newPage.evaluate(() => {
-      document.getElementById("12").value = "14:41";
+      document.getElementById("12").value = "09:05";
       document.getElementById("24").value = "18:00";
     });
 

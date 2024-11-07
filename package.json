@@ -5,9 +5,11 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "fs": "^0.0.1-security",
     "moment": "^2.29.4",
-    "puppeteer": "^21.6.1"
+    "puppeteer": "^21.6.1",
+    "santoid-sdk": "^4.0.1"
   },
   "scripts": {
     "start": "node index.js"

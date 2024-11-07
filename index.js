@@ -2,8 +2,8 @@ import { QualitorConnection } from "./src/connection/index.js";
 
 const initalize = async () => {
   const { handleLogin, browser, liberacaoAcesso } = await QualitorConnection({
-    login: "seu login qualitor",
-    senha: "sua senha qualitor",
+    login: "erick.castilho",
+    senha: "_T@nid@551312@.32",
   });
 
   let logged = false;
